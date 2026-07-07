@@ -1,16 +1,16 @@
-# Developer Portfolio
+# Premium Developer Portfolio Template
 
-A premium, interactive, space-themed developer portfolio website built using React, Vite, TypeScript, Tailwind CSS v4, and Framer Motion.
+A premium, interactive, space-themed developer portfolio template built using React, Vite, TypeScript, Tailwind CSS v4, and Framer Motion. Easily customizable for any developer.
 
 ## ✨ Features
 
 - 🌌 **Interactive Particle Network Background**: High-performance canvas-based network particle effect that responds to mouse hover and pushes particles away gently.
-- 🖱️ **Cursor Glow Hover Overlay**: Smooth mouse-tracking radial gradient spotlight.
+- 🖱️ **Cursor Glow Spotlight**: Smooth mouse-tracking radial gradient overlay.
 - 🚀 **Dynamic Typing Tagline**: Auto-looping animated subtitles.
-- 📊 **Quick Stats Dashboard**: Showcases LeetCode metrics, competitive programming stats, and GDSC Core Team membership.
-- 🛡️ **Interactive Projects Filter**: Filterable grid displaying MERN Stack and AI/Optimization projects.
+- 📊 **Quick Stats Dashboard**: Showcases coding metrics, competitive programming stats, and leadership highlights.
+- 🛡️ **Interactive Projects Filter**: Filterable grid displaying projects categorized by tech stack.
 - ✉️ **Functional Contact Form**: Connected to **Web3Forms** for instant email routing straight to your inbox.
-- 📱 **Fully Responsive Layout**: Premium look-and-feel optimized across all screen sizes.
+- 📱 **Fully Responsive Layout**: Premium look-and-feel optimized across mobile, tablet, and desktop viewports.
 
 ## 🛠️ Tech Stack
 
@@ -29,7 +29,7 @@ Make sure you have Node.js installed on your machine.
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/arpitbuilds/Portfolio.git
+   git clone https://github.com/yourusername/Portfolio.git
    cd Portfolio
    ```
 
@@ -48,9 +48,13 @@ Make sure you have Node.js installed on your machine.
    npm run build
    ```
 
-## 📬 Contact Form Activation
+## ⚙️ Customization
 
-To activate email forwarding for the contact form, get a free Access Key from [Web3Forms](https://web3forms.com/) and replace `"YOUR_ACCESS_KEY_HERE"` inside `src/App.tsx`:
+### 1. Personalize Portfolio Data
+All content (name, stats, skills, projects, timeline, and certifications) is serialized in a single configuration file. Modify `src/data/portfolio.ts` to update the site with your own details.
+
+### 2. Activate Contact Form
+Get a free Access Key from [Web3Forms](https://web3forms.com/) and replace the placeholder in `src/App.tsx`:
 ```typescript
-formData.append("access_key", "f10f05a1-c85c-4392-b6b9-5fea613ac2e2")
+formData.append("access_key", "YOUR_ACCESS_KEY_HERE")
 ```
