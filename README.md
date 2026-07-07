@@ -1,32 +1,56 @@
-# React + TypeScript + Vite
+# Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A premium, interactive, space-themed developer portfolio website built using React, Vite, TypeScript, Tailwind CSS v4, and Framer Motion.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- 🌌 **Interactive Particle Network Background**: High-performance canvas-based network particle effect that responds to mouse hover and pushes particles away gently.
+- 🖱️ **Cursor Glow Hover Overlay**: Smooth mouse-tracking radial gradient spotlight.
+- 🚀 **Dynamic Typing Tagline**: Auto-looping animated subtitles.
+- 📊 **Quick Stats Dashboard**: Showcases LeetCode metrics, competitive programming stats, and GDSC Core Team membership.
+- 🛡️ **Interactive Projects Filter**: Filterable grid displaying MERN Stack and AI/Optimization projects.
+- ✉️ **Functional Contact Form**: Connected to **Web3Forms** for instant email routing straight to your inbox.
+- 📱 **Fully Responsive Layout**: Premium look-and-feel optimized across all screen sizes.
 
-## React Compiler
+## 🛠️ Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React.js, TypeScript, Tailwind CSS v4, Framer Motion
+- **Utilities/Icons:** Lucide-React, clsx, tailwind-merge
+- **Build Tool:** Vite
+- **Email Service:** Web3Forms API
 
-## Expanding the Oxlint configuration
+## 🚀 Getting Started
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+### Prerequisites
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+Make sure you have Node.js installed on your machine.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/arpitbuilds/Portfolio.git
+   cd Portfolio
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm run dev
+   ```
+
+4. Build for production:
+   ```bash
+   npm run build
+   ```
+
+## 📬 Contact Form Activation
+
+To activate email forwarding for the contact form, get a free Access Key from [Web3Forms](https://web3forms.com/) and replace `"YOUR_ACCESS_KEY_HERE"` inside `src/App.tsx`:
+```typescript
+formData.append("access_key", "f10f05a1-c85c-4392-b6b9-5fea613ac2e2")
 ```
-
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
