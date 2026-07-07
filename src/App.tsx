@@ -476,7 +476,7 @@ export default function App() {
                 Featured Projects
               </h2>
               <p className="text-gray-400 max-w-xl">
-                Here are some of the full-stack MERN, artificial intelligence, and constraint programming projects I have built.
+                Here are some of the full-stack MERN, artificial intelligence, database systems, and constraint programming projects I have built.
               </p>
             </div>
             
