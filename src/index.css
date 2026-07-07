@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+  --font-sans: 'Outfit', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --background: #030014;
+  --foreground: #f4f4f5;
+  --card: rgba(10, 10, 20, 0.6);
+  --card-foreground: #f4f4f5;
+  --popover: #050515;
+  --popover-foreground: #f4f4f5;
+  --primary: #c084fc;
+  --primary-foreground: #030014;
+  --secondary: #161630;
+  --secondary-foreground: #f4f4f5;
+  --muted: #0d0d21;
+  --muted-foreground: #9ca3af;
+  --accent: #252550;
+  --accent-foreground: #f4f4f5;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(255, 255, 255, 0.08);
+  --input: rgba(255, 255, 255, 0.08);
+  --ring: #c084fc;
+  --radius: 1rem;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Outfit', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Custom interactive effects */
+.radial-glow {
+  background: radial-gradient(circle 800px at var(--x, 50%) var(--y, 50%), rgba(192, 132, 252, 0.08), transparent 80%);
+}
+
+.mesh-grid {
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center;
+}
+
+.glow-card {
+  position: relative;
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), border-color 0.3s, box-shadow 0.3s;
+}
+
+.glow-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(192, 132, 252, 0.3) !important;
+  box-shadow: 0 10px 30px -10px rgba(192, 132, 252, 0.25);
+}
+
+.cyber-grid {
+  position: absolute;
+  inset: 0;
+  background: 
+    radial-gradient(ellipse at top, rgba(192, 132, 252, 0.15) 0%, transparent 60%),
+    radial-gradient(ellipse at bottom, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
+  z-index: -2;
+  pointer-events: none;
+}
+
+.glass-nav {
+  background: rgba(3, 0, 20, 0.7);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #030014;
+}
+::-webkit-scrollbar-thumb {
+  background: #252550;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c084fc;
+}
