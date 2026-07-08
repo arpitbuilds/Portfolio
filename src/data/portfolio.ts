@@ -22,6 +22,13 @@ export interface LeadershipItem {
   bullets: string[];
 }
 
+export interface Certification {
+  name: string;
+  issuer: string;
+  date?: string;
+  url?: string;
+}
+
 export interface PortfolioData {
   name: string;
   tagline: string;
@@ -42,7 +49,7 @@ export interface PortfolioData {
   projects: Project[];
   education: EducationItem[];
   achievements: string[];
-  certifications: string[];
+  certifications: Certification[];
   leadership: LeadershipItem[];
 }
 
@@ -90,18 +97,7 @@ export const portfolioData: PortfolioData = {
       live: "#",
       featured: true
     },
-    {
-      title: "Social-Guard",
-      description: "An AI-powered moderation and content verification system designed to combat misinformation and cyberbullying.",
-      technologies: ["Python", "Streamlit", "LLaMA 3 (8B)", "Natural Language Processing", "YouTube API"],
-      bullets: [
-        "Engineered an AI content detection layer using NLP to flag offensive language, cyberbullying, and fake news across Facebook, Instagram, and Twitter.",
-        "Integrated the YouTube API to fetch trending video content and cross-verify details with Google News articles, automatically flagging misleading media in real-time.",
-        "Leveraged LLaMA 3 (8B) to transcribe audio tracks, summarize video contents, and provide translation support across multiple languages."
-      ],
-      github: "https://github.com/arpitbuilds/Social-Guard",
-      featured: true
-    },
+
     {
       title: "DataOne Database",
       description: "A lightweight, transaction-supported, file-based database management system with a custom query language.",
@@ -147,13 +143,48 @@ export const portfolioData: PortfolioData = {
     "Competitive Coding: Solved 200+ problems on GeeksforGeeks and earned a 5-Star rating in C++ on HackerRank."
   ],
   certifications: [
-    "CCNA: Enterprise Networking, Security, and Automation (Cisco Networking Academy)",
-    "CCNA: Switching, Routing, and Wireless Essentials (Cisco Networking Academy)",
-    "CCNA: Introduction to Networks (Cisco Networking Academy)",
-    "Python Essentials 1 & 2 (Cisco Networking Academy)",
-    "C++ Programming (Abdul Bari)",
-    "Complete Web Development (Hitesh Choudhary)",
-    "Web Full Stack Internship (AICTE NEAT)"
+    {
+      name: "CCNA: Enterprise Networking, Security, and Automation",
+      issuer: "Cisco Networking Academy",
+      date: "Jun 2026",
+      url: "https://www.linkedin.com/in/arpit-singh-a5380a348/details/certifications/"
+    },
+    {
+      name: "CCNA: Switching, Routing, and Wireless Essentials",
+      issuer: "Cisco Networking Academy",
+      date: "May 2026",
+      url: "https://www.linkedin.com/in/arpit-singh-a5380a348/details/certifications/"
+    },
+    {
+      name: "CCNA: Introduction to Networks",
+      issuer: "Cisco Networking Academy",
+      date: "Mar 2026",
+      url: "https://www.linkedin.com/in/arpit-singh-a5380a348/details/certifications/"
+    },
+    {
+      name: "Python Essentials 1 & 2",
+      issuer: "Cisco Networking Academy",
+      date: "May 2026",
+      url: "https://www.linkedin.com/in/arpit-singh-a5380a348/details/certifications/"
+    },
+    {
+      name: "C++ Programming",
+      issuer: "Abdul Bari (Udemy)",
+      date: "2024",
+      url: "https://www.linkedin.com/in/arpit-singh-a5380a348/details/certifications/"
+    },
+    {
+      name: "Complete Web Development",
+      issuer: "Hitesh Choudhary (Chai aur Code)",
+      date: "2024",
+      url: "https://www.linkedin.com/in/arpit-singh-a5380a348/details/certifications/"
+    },
+    {
+      name: "Web Full Stack Internship",
+      issuer: "AICTE NEAT",
+      date: "2024",
+      url: "https://www.linkedin.com/in/arpit-singh-a5380a348/details/certifications/"
+    }
   ],
   leadership: [
     {

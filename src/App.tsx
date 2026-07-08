@@ -679,21 +679,33 @@ export default function App() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {portfolioData.certifications.map((cert, idx) => (
               <motion.div
-                key={cert}
+                key={cert.name}
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: idx * 0.1 }}
               >
-                <div className="border border-white/5 rounded-xl p-6 bg-white/5 backdrop-blur-sm glow-card flex items-center gap-4">
-                  <div className="p-3 bg-purple-500/10 border border-purple-500/20 rounded-lg text-purple-400 shrink-0">
-                    <Award className="size-6" />
+                <a 
+                  href={cert.url || "#"} 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="block group"
+                >
+                  <div className="border border-white/5 hover:border-purple-500/30 rounded-xl p-6 bg-white/5 backdrop-blur-sm glow-card flex items-center justify-between gap-4 transition-all hover:bg-white/10">
+                    <div className="flex items-center gap-4">
+                      <div className="p-3 bg-purple-500/10 border border-purple-500/20 rounded-lg text-purple-400 shrink-0 group-hover:bg-purple-500/20 transition-all">
+                        <Award className="size-6" />
+                      </div>
+                      <div>
+                        <h4 className="text-base font-bold text-gray-200 group-hover:text-purple-300 transition-colors">{cert.name}</h4>
+                        <p className="text-xs text-gray-400 mt-1">{cert.issuer} {cert.date && `• ${cert.date}`}</p>
+                      </div>
+                    </div>
+                    {cert.url && (
+                      <ExternalLink className="size-4 text-gray-600 group-hover:text-purple-400 transition-colors shrink-0" />
+                    )}
                   </div>
-                  <div>
-                    <h4 className="text-base font-bold text-gray-200">{cert}</h4>
-                    <p className="text-xs text-gray-500 mt-1">Verified Credential</p>
-                  </div>
-                </div>
+                </a>
               </motion.div>
             ))}
           </div>
