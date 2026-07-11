@@ -81,7 +81,7 @@ export const portfolioData: PortfolioData = {
         "Architected a highly secure infrastructure utilizing JWT authentication and bcrypt hashing, enforcing strict role-based access control (RBAC) across 3 distinct user tiers."
       ],
       github: "https://github.com/arpitbuilds/Schedulix",
-      live: "#",
+      live: "https://schedulix-eight.vercel.app/login",
       featured: true
     },
     {
@@ -94,7 +94,7 @@ export const portfolioData: PortfolioData = {
         "Orchestrated advanced features including an AI-driven PDF parsing engine, real-time resume view tracking via Socket.io with persistent history storage, and secure authentication using JWT, bcrypt, and ImageKit."
       ],
       github: "https://github.com/arpitbuilds/ResumeForge",
-      live: "#",
+      live: "https://resume-forge-beryl.vercel.app/app/builder/69bd63d8ac075aac07bac8a6",
       featured: true
     },
 
@@ -120,7 +120,7 @@ export const portfolioData: PortfolioData = {
         "Incorporated persistent history management using local browser storage, offering 1-click downloads (.txt) and social sharing features to optimize the end-user experience."
       ],
       github: "https://github.com/arpitbuilds/Briefly",
-      live: "#",
+      live: "https://briefly-seven-xi.vercel.app/",
       featured: false
     }
   ],
