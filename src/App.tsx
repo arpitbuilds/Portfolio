@@ -329,7 +329,7 @@ export default function App() {
                   <div className="text-xs text-gray-400 mt-1">LeetCode Solved</div>
                 </div>
                 <div className="bg-[#0c0c25] border border-white/5 p-4 rounded-xl">
-                  <div className="text-3xl font-extrabold text-indigo-400">1795</div>
+                  <div className="text-3xl font-extrabold text-indigo-400">1815</div>
                   <div className="text-xs text-gray-400 mt-1">LeetCode Max Rating</div>
                 </div>
                 <div className="bg-[#0c0c25] border border-white/5 p-4 rounded-xl">
@@ -378,9 +378,8 @@ export default function App() {
               </CardHeader>
               <CardContent className="flex flex-col gap-2">
                 {portfolioData.skills.languages.map((skill) => (
-                  <div key={skill} className="flex items-center justify-between text-sm py-1 border-b border-white/5 last:border-0">
-                    <span className="text-gray-300 font-mono">{skill}</span>
-                    <Badge variant="outline" className="text-[10px] text-purple-300 border-purple-500/20 bg-purple-500/5">Core</Badge>
+                  <div key={skill} className="text-sm py-1 border-b border-white/5 last:border-0 text-gray-300 font-mono">
+                    {skill}
                   </div>
                 ))}
               </CardContent>
@@ -398,9 +397,8 @@ export default function App() {
               </CardHeader>
               <CardContent className="flex flex-col gap-2">
                 {portfolioData.skills.frontend.map((skill) => (
-                  <div key={skill} className="flex items-center justify-between text-sm py-1 border-b border-white/5 last:border-0">
-                    <span className="text-gray-300 font-mono">{skill}</span>
-                    <Badge variant="outline" className="text-[10px] text-indigo-300 border-indigo-500/20 bg-indigo-500/5">Active</Badge>
+                  <div key={skill} className="text-sm py-1 border-b border-white/5 last:border-0 text-gray-300 font-mono">
+                    {skill}
                   </div>
                 ))}
               </CardContent>
@@ -418,9 +416,8 @@ export default function App() {
               </CardHeader>
               <CardContent className="flex flex-col gap-2">
                 {portfolioData.skills.backend.map((skill) => (
-                  <div key={skill} className="flex items-center justify-between text-sm py-1 border-b border-white/5 last:border-0">
-                    <span className="text-gray-300 font-mono">{skill}</span>
-                    <Badge variant="outline" className="text-[10px] text-pink-300 border-pink-500/20 bg-pink-500/5">Advanced</Badge>
+                  <div key={skill} className="text-sm py-1 border-b border-white/5 last:border-0 text-gray-300 font-mono">
+                    {skill}
                   </div>
                 ))}
               </CardContent>
@@ -438,9 +435,8 @@ export default function App() {
               </CardHeader>
               <CardContent className="flex flex-col gap-2">
                 {portfolioData.skills.databases.map((skill) => (
-                  <div key={skill} className="flex items-center justify-between text-sm py-1 border-b border-white/5 last:border-0">
-                    <span className="text-gray-300 font-mono">{skill}</span>
-                    <Badge variant="outline" className="text-[10px] text-cyan-300 border-cyan-500/20 bg-cyan-500/5">NoSQL</Badge>
+                  <div key={skill} className="text-sm py-1 border-b border-white/5 last:border-0 text-gray-300 font-mono">
+                    {skill}
                   </div>
                 ))}
               </CardContent>
@@ -458,9 +454,8 @@ export default function App() {
               </CardHeader>
               <CardContent className="flex flex-col gap-2">
                 {portfolioData.skills.tools.map((skill) => (
-                  <div key={skill} className="flex items-center justify-between text-sm py-1 border-b border-white/5 last:border-0">
-                    <span className="text-gray-300 font-mono">{skill}</span>
-                    <Badge variant="outline" className="text-[10px] text-yellow-300 border-yellow-500/20 bg-yellow-500/5">Daily</Badge>
+                  <div key={skill} className="text-sm py-1 border-b border-white/5 last:border-0 text-gray-300 font-mono">
+                    {skill}
                   </div>
                 ))}
               </CardContent>
@@ -478,9 +473,8 @@ export default function App() {
               </CardHeader>
               <CardContent className="flex flex-col gap-2">
                 {portfolioData.skills.aiTools.map((skill) => (
-                  <div key={skill} className="flex items-center justify-between text-sm py-1 border-b border-white/5 last:border-0">
-                    <span className="text-gray-300 font-mono">{skill}</span>
-                    <Badge variant="outline" className="text-[10px] text-teal-300 border-teal-500/20 bg-teal-500/5">Active</Badge>
+                  <div key={skill} className="text-sm py-1 border-b border-white/5 last:border-0 text-gray-300 font-mono">
+                    {skill}
                   </div>
                 ))}
               </CardContent>

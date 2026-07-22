@@ -153,7 +153,7 @@ export const portfolioData: PortfolioData = {
     }
   ],
   achievements: [
-    "LeetCode Solver: Solved 750+ algorithmic problems on LeetCode with a Max Rating of 1795.",
+    "LeetCode Solver: Solved 750+ algorithmic problems on LeetCode with a Max Rating of 1815.",
     "Competitive Coding: Solved 200+ problems on GeeksforGeeks and earned a 5-Star rating in C++ on HackerRank."
   ],
   certifications: [
