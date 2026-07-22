@@ -325,7 +325,7 @@ export default function App() {
               
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-[#0c0c25] border border-white/5 p-4 rounded-xl">
-                  <div className="text-3xl font-extrabold text-purple-400">700+</div>
+                  <div className="text-3xl font-extrabold text-purple-400">750+</div>
                   <div className="text-xs text-gray-400 mt-1">LeetCode Solved</div>
                 </div>
                 <div className="bg-[#0c0c25] border border-white/5 p-4 rounded-xl">
@@ -365,7 +365,7 @@ export default function App() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {/* Languages */}
             <Card className="bg-[#0c0c25]/40 border-white/5 glow-card">
               <CardHeader className="flex flex-row items-center gap-3">
@@ -461,6 +461,26 @@ export default function App() {
                   <div key={skill} className="flex items-center justify-between text-sm py-1 border-b border-white/5 last:border-0">
                     <span className="text-gray-300 font-mono">{skill}</span>
                     <Badge variant="outline" className="text-[10px] text-yellow-300 border-yellow-500/20 bg-yellow-500/5">Daily</Badge>
+                  </div>
+                ))}
+              </CardContent>
+            </Card>
+
+            {/* AI Tools */}
+            <Card className="bg-[#0c0c25]/40 border-white/5 glow-card">
+              <CardHeader className="flex flex-row items-center gap-3">
+                <div className="p-2 bg-teal-500/10 border border-teal-500/20 rounded-lg text-teal-400">
+                  <Sparkles className="size-5" />
+                </div>
+                <div>
+                  <CardTitle className="text-base text-gray-200">AI Productivity</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent className="flex flex-col gap-2">
+                {portfolioData.skills.aiTools.map((skill) => (
+                  <div key={skill} className="flex items-center justify-between text-sm py-1 border-b border-white/5 last:border-0">
+                    <span className="text-gray-300 font-mono">{skill}</span>
+                    <Badge variant="outline" className="text-[10px] text-teal-300 border-teal-500/20 bg-teal-500/5">Active</Badge>
                   </div>
                 ))}
               </CardContent>

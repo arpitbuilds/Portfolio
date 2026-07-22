@@ -45,6 +45,7 @@ export interface PortfolioData {
     backend: string[];
     databases: string[];
     tools: string[];
+    aiTools: string[];
   };
   projects: Project[];
   education: EducationItem[];
@@ -56,7 +57,7 @@ export interface PortfolioData {
 export const portfolioData: PortfolioData = {
   name: "Arpit Singh",
   tagline: "Full-Stack Developer & Algorithmic Problem Solver",
-  bio: "Final year Computer Science Engineering student passionate about crafting high-performance full-stack web applications and solving complex algorithmic challenges. Active coder with 700+ solved problems on LeetCode and experience building MERN-stack AI applications.",
+  bio: "Final year Computer Science Engineering student passionate about crafting high-performance full-stack web applications and solving complex algorithmic challenges. Active coder with 750+ solved problems on LeetCode and experience building MERN-stack AI applications.",
   email: "arpitbuilds@gmail.com",
   phone: "+91 86043-79088",
   github: "https://github.com/arpitbuilds",
@@ -68,7 +69,8 @@ export const portfolioData: PortfolioData = {
     frontend: ["React.js", "Tailwind CSS", "HTML", "CSS"],
     backend: ["Node.js", "Express.js", "Socket.io", "REST APIs"],
     databases: ["MongoDB"],
-    tools: ["Git", "GitHub", "Postman", "VS Code", "Google OR-Tools"]
+    tools: ["Git", "GitHub", "Postman", "VS Code", "Google OR-Tools"],
+    aiTools: ["Claude", "ChatGPT", "GitHub Copilot"]
   },
   projects: [
     {
@@ -111,6 +113,18 @@ export const portfolioData: PortfolioData = {
       featured: true
     },
     {
+      title: "Memory-Recycled Linked List in C++",
+      description: "A low-level C++ data structures project showcasing memory optimization through a custom Node Pool to bypass OS allocations and prevent leaks.",
+      technologies: ["C++", "Valgrind", "Memory Management", "Data Structures"],
+      bullets: [
+        "Designed a custom memory recycling Node Pool (Free List) in C++ to bypass constant OS allocations (new/delete) and eliminate heap fragmentation, achieving O(1) node allocation and recycling.",
+        "Implemented singly linked list operations (recycled insertion, traversal, and deletion) and guaranteed zero memory leaks by deallocating both active and pooled nodes upon termination.",
+        "Compiled and tested the application with debugging symbols, verifying leak-free status via detailed Valgrind analysis (leak-check=full)."
+      ],
+      github: "https://github.com/arpitbuilds/memory-pool-linked-list-cpp",
+      featured: true
+    },
+    {
       title: "Sumz (AI Summarizer)",
       description: "A clean, responsive AI article summarizer featuring multilingual translation and Text-to-Speech.",
       technologies: ["React.js", "Tailwind CSS", "REST APIs"],
@@ -139,7 +153,7 @@ export const portfolioData: PortfolioData = {
     }
   ],
   achievements: [
-    "LeetCode Solver: Solved 700+ algorithmic problems on LeetCode with a Max Rating of 1795.",
+    "LeetCode Solver: Solved 750+ algorithmic problems on LeetCode with a Max Rating of 1795.",
     "Competitive Coding: Solved 200+ problems on GeeksforGeeks and earned a 5-Star rating in C++ on HackerRank."
   ],
   certifications: [
